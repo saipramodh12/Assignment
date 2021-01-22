@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        <h1>Welcome to JavaScript</h1>
+        
+            <script>
+                 
+                console.log(1 + "2" + "2")
+                // O/P:122 - Why because Here + operator acts as a Concatenation operator and 2 is casted as Integer.
+               
+                console.log(1 + +"2" + "2");
+                // O/P:32 - Why because Here one + is concatenation followed by Integer 2 and second + acts as Arithmetic operator and it is 3 followed by again concatenation 3. 
+                
+                console.log(1 + -"1" + "2");
+                // O/P:02 -Why because Here first + is concat and followed by -1 so,it is 0 and followed by conact 2 so it is 02.
+
+                console.log(+"1" + "1" + "2");
+                // O/P:112 -Why because Here after first 1 it concatenation no multiple operators in between so,it is 112.
+
+                console.log( "A" - "B" + "2");
+                // O/P:NaN2 
+
+                console.log( "A" - "B" + 2);
+                //  O/P:NaN 
+
+
+            </script>
+
+    </body>
+</html>
